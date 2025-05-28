@@ -1,0 +1,53 @@
+﻿@model List<AIUB_Portal_Redesign.Models.StudentProfile>
+@{
+    ViewBag.Title = "Admin Dashboard";
+}
+
+<h2>Pending Student Registrations</h2>
+
+@if (!Model.Any())
+{
+    <p>No pending registrations.</p>
+}
+else
+{
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Student ID</th>
+                <th>Program</th>
+                <th>Date of Birth</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.FullName</td>
+                    <td>@student.StudentId</td>
+                    <td>@student.Program</td>
+                    <td>@student.DateOfBirth.ToShortDateString()</td>
+                    <td>@student.Phone</td>
+                    <td>@student.Address</td>
+                    <td>
+                        @using (Html.BeginForm("Approve", "Admin", FormMethod.Post))
+                        {
+                            @Html.Hidden("id", student.UserId)
+                            <button type="submit">Approve</button>
+                        }
+
+                        @using (Html.BeginForm("Reject", "Admin", FormMethod.Post))
+                        {
+                            @Html.Hidden("id", student.UserId)
+                            <button type="submit">Reject</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

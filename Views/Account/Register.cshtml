@@ -11,13 +11,14 @@
 
     <p>
         <label>Email:</label><br />
-        <input type="email" name="Email" required />
-        @Html.ValidationMessage("Email")
+        @Html.TextBoxFor(m => m.Email, new { type = "email" })
+        @Html.ValidationMessageFor(m => m.Email)
     </p>
 
     <p>
         <label>Password:</label><br />
-        <input type="password" name="Password" required />
+        @Html.PasswordFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
     </p>
 
     <p>

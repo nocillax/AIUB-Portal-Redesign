@@ -20,7 +20,14 @@ namespace AIUB_Portal_Redesign.Models
         [ForeignKey("User")]
         public int UserId { get; set; }
 
-        [Required]
+        [NotMapped]
+        public string Email { get; set; }
+
+        [NotMapped]
+        public string Password { get; set; }
+
+
+        [NotMapped]
         public string FullName { get; set; }
 
         [Required]
@@ -43,7 +50,6 @@ namespace AIUB_Portal_Redesign.Models
         public ProfileStatus Status { get; set; } = ProfileStatus.Pending;
 
         public virtual User User { get; set; }
-
-
     }
+    
 }

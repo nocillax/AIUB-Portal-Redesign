@@ -26,12 +26,14 @@ namespace AIUB_Portal_Redesign.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<StudentProfile>()
-                .HasRequired(stdProfile => stdProfile.User)
-                .WithOptional(usr => usr.StudentProfile);
+            modelBuilder.Entity<User>()
+                .HasOptional(u => u.StudentProfile)
+                .WithRequired(sp => sp.User)
+                .WillCascadeOnDelete(true);
 
             base.OnModelCreating(modelBuilder);
         }
+
     }
 
     //public class MyEntity

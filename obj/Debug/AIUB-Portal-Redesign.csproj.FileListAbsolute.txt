@@ -81,5 +81,5 @@ F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Portal-Redesign.csproj.CoreCo
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Por.7C7EDDDB.Up2Date
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Portal-Redesign.dll
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Portal-Redesign.pdb
-F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB_Portal_Redesign.Migrations.initial.resources
+F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB_Portal_Redesign.Migrations.final.resources
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Portal-Redesign.csproj.GenerateResource.cache
