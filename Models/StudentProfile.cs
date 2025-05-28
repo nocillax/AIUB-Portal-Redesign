@@ -21,11 +21,14 @@ namespace AIUB_Portal_Redesign.Models
         public int UserId { get; set; }
 
         [NotMapped]
+        [EmailAddress]
         public string Email { get; set; }
 
         [NotMapped]
+        [DataType(DataType.Password)]
+        [MinLength(6, ErrorMessage = "Password must be at least 6 characters long.")]
+        [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d).{6,}$", ErrorMessage = "Password must contain letters and numbers, and be at least 6 characters.")]
         public string Password { get; set; }
-
 
         [NotMapped]
         public string FullName { get; set; }
@@ -35,7 +38,7 @@ namespace AIUB_Portal_Redesign.Models
         public string StudentId { get; set; }
 
         [Required]
-        public string Program { get; set; }
+        public string Department { get; set; }
 
         [Required]
         [DataType(DataType.Date)]

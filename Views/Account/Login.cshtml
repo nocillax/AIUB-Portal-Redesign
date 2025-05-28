@@ -1,27 +1,68 @@
-﻿@{
-    ViewBag.Title = "Login";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Login - Student Portal</title>
+    <link rel="stylesheet" href="~/Content/css/auth.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="auth-container">
+            <div class="auth-content">
+                <div class="auth-header">
+                    <h1 class="auth-title">AMERICAN INTERNATIONAL UNIVERSITY-BANGLADESH</h1>
+                    <p class="auth-subtitle">- WHERE LEADERS ARE CREATED -</p>
+                </div>
 
-<h2>Login</h2>
 
-@using (Html.BeginForm("Login", "Account", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
+                @{
+                    Layout = null;
+                }
 
-    <p>
-        <label>Email:</label><br />
-        <input type="email" name="email" required />
-    </p>
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post))
 
-    <p>
-        <label>Password:</label><br />
-        <input type="password" name="password" required />
-    </p>
+                 {
+                    @Html.AntiForgeryToken()
 
-    <button type="submit">Login</button>
-}
+                    if (ViewBag.Error != null)
+                    {
+                        <div class="general-error show">@ViewBag.Error</div>
+                    }
 
-@if (ViewBag.Error != null)
-{
-    <p style="color:red;">@ViewBag.Error</p>
-}
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your university email" required autocomplete="email" />
+                        <div class="error-message" id="emailError">Email is required</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required autocomplete="current-password" />
+                        <div class="error-message" id="passwordError">Password is required</div>
+                    </div>
+
+                    <button type="submit" class="auth-button">Login to Portal</button>
+                 }
+
+                <div class="forgot-password">
+                    <a href="/Account/ForgotPassword">Forgot your password?</a>
+                </div>
+
+                <div class="divider">
+                    <span>Need Help?</span>
+                </div>
+
+                <div style="text-align: center">
+                    <a href=""
+                        style="color: #666; text-decoration: none; font-size: 14px">
+                        Contact IT Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

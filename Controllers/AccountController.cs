@@ -38,7 +38,6 @@ namespace AIUB_Portal_Redesign.Controllers
         }
 
 
-
         private string HashPassword(string password)
         {
             using(SHA256 sha256 = SHA256.Create())
@@ -67,7 +66,18 @@ namespace AIUB_Portal_Redesign.Controllers
                 return RedirectToDashboard();
             }
 
-            if (!ModelState.IsValid) return View(sp);
+            string confirmPassword = Request.Form["ConfirmPassword"];
+
+            if (!ModelState.IsValid)
+            {
+                return View(sp);
+            }
+
+            if (sp.Password != confirmPassword)
+            {
+                ModelState.AddModelError("Password", "Passwords do not match.");
+                return View(sp);
+            }
 
             if (_dbContext.Users.Any(u => u.Email == sp.Email))
             {
