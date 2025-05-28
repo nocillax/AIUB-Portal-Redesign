@@ -1,0 +1,64 @@
+﻿@model AIUB_Portal_Redesign.Models.StudentProfile
+@{
+    ViewBag.Title = "Student Registration";
+}
+
+<h2>Student Registration</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <p>
+        <label>Email:</label><br />
+        <input type="email" name="Email" required />
+        @Html.ValidationMessage("Email")
+    </p>
+
+    <p>
+        <label>Password:</label><br />
+        <input type="password" name="Password" required />
+    </p>
+
+    <p>
+        <label>Full Name:</label><br />
+        @Html.TextBoxFor(m => m.FullName)
+        @Html.ValidationMessageFor(m => m.FullName)
+    </p>
+
+    <p>
+        <label>Student ID:</label><br />
+        @Html.TextBoxFor(m => m.StudentId)
+        @Html.ValidationMessageFor(m => m.StudentId)
+    </p>
+
+    <p>
+        <label>Program:</label><br />
+        @Html.TextBoxFor(m => m.Program)
+        @Html.ValidationMessageFor(m => m.Program)
+    </p>
+
+    <p>
+        <label>Date of Birth:</label><br />
+        @Html.TextBoxFor(m => m.DateOfBirth, new { type = "date" })
+        @Html.ValidationMessageFor(m => m.DateOfBirth)
+    </p>
+
+    <p>
+        <label>Phone:</label><br />
+        @Html.TextBoxFor(m => m.Phone)
+        @Html.ValidationMessageFor(m => m.Phone)
+    </p>
+
+    <p>
+        <label>Address:</label><br />
+        @Html.TextAreaFor(m => m.Address)
+    </p>
+
+    <button type="submit">Register</button>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: green;">@ViewBag.Message</p>
+}
