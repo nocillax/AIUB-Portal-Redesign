@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Main Content Styles - Matching Dashboard Layout */
+
 .main-content {
     margin-left: 300px;
     margin-top: 70px;
@@ -23,7 +23,8 @@ body {
         margin-left: 0;
     }
 
-/* Page Header */
+
+
 .page-header {
     margin-bottom: 32px;
 }
@@ -41,7 +42,8 @@ body {
     font-weight: 400;
 }
 
-/* Registration Table Card */
+
+
 .registration-card {
     background: white;
     border-radius: 16px;
@@ -119,7 +121,8 @@ body {
         box-shadow: 0 0 0 3px rgba(187, 225, 248, 0.2);
     }
 
-/* Table Styles */
+
+
 .table-container {
     overflow-x: auto;
 }
@@ -141,6 +144,7 @@ body {
         border-bottom: 2px solid #f1f3f4;
         position: sticky;
         top: 0;
+        min-width: 150px;
     }
 
     .registration-table td {
@@ -149,6 +153,7 @@ body {
         font-size: 14px;
         color: #495057;
         vertical-align: middle;
+        min-width: 150px;
     }
 
     .registration-table tr:nth-child(even) {
@@ -220,7 +225,7 @@ body {
         box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
     }
 
-/* Empty State */
+
 .empty-state {
     text-align: center;
     padding: 80px 20px;
@@ -251,7 +256,8 @@ body {
     color: #6c757d;
 }
 
-/* Card Footer */
+
+
 .card-footer {
     padding: 16px 28px;
     border-top: 1px solid #f1f3f4;
@@ -296,6 +302,8 @@ body {
         color: white;
         border-color: #054593;
     }
+
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -358,4 +366,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-

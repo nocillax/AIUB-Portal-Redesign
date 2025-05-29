@@ -1,7 +1,80 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\SDD-Project\\AIUB-Portal-Redesign\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\student\\downloadforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\student\\downloadforms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\student\\coursedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\student\\coursedetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\student\\applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\student\\applications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\scripts\\sidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:scripts\\sidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\scripts\\dash.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:scripts\\dash.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\content\\css\\downloadforms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:content\\css\\downloadforms.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\content\\css\\dash.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:content\\css\\dash.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\content\\css\\coursedetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:content\\css\\coursedetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\content\\css\\applications.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:content\\css\\applications.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\content\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:content\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\content\\css\\admindash.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:content\\css\\admindash.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|f:\\sdd-project\\aiub-portal-redesign\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{367AA6DA-1B88-4190-9653-D28855488FD2}|AIUB-Portal-Redesign.csproj|solutionrelative:views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +82,242 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CourseDetails.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\CourseDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\CourseDetails.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\CourseDetails.cshtml",
+              "RelativeToolTip": "Views\\Student\\CourseDetails.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAJ4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T05:15:50.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Applications.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\Applications.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Applications.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\Applications.cshtml",
+              "RelativeToolTip": "Views\\Student\\Applications.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T05:14:58.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "downloadForms.css",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\downloadForms.css",
+              "RelativeDocumentMoniker": "Content\\css\\downloadForms.css",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\downloadForms.css",
+              "RelativeToolTip": "Content\\css\\downloadForms.css",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAswFQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T05:11:08.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dash.css",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\dash.css",
+              "RelativeDocumentMoniker": "Content\\css\\dash.css",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\dash.css",
+              "RelativeToolTip": "Content\\css\\dash.css",
+              "ViewState": "AgIAAMYCAAAAAAAAAAAmwOsCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T05:10:20.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "courseDetails.css",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\courseDetails.css",
+              "RelativeDocumentMoniker": "Content\\css\\courseDetails.css",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\courseDetails.css",
+              "RelativeToolTip": "Content\\css\\courseDetails.css",
+              "ViewState": "AgIAAEIBAAAAAAAAAAAqwJ8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T05:09:35.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "applications.css",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\applications.css",
+              "RelativeDocumentMoniker": "Content\\css\\applications.css",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\applications.css",
+              "RelativeToolTip": "Content\\css\\applications.css",
+              "ViewState": "AgIAABQBAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T05:04:08.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "auth.css",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\auth.css",
+              "RelativeDocumentMoniker": "Content\\css\\auth.css",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\auth.css",
+              "RelativeToolTip": "Content\\css\\auth.css",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T05:02:05.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "adminDash.css",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\adminDash.css",
+              "RelativeDocumentMoniker": "Content\\css\\adminDash.css",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Content\\css\\adminDash.css",
+              "RelativeToolTip": "Content\\css\\adminDash.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T04:47:07.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwBcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:44:14.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:43:43.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Index.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T04:42:20.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DownloadForms.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\DownloadForms.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\DownloadForms.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Student\\DownloadForms.cshtml",
+              "RelativeToolTip": "Views\\Student\\DownloadForms.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T04:42:16.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwF4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T04:41:24.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T04:40:50.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Sidebar.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Sidebar.cshtml",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAqwI0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T04:40:20.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Navbar.cshtml",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Navbar.cshtml",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Navbar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T04:40:10.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sidebar.js",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Scripts\\sidebar.js",
+              "RelativeDocumentMoniker": "Scripts\\sidebar.js",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Scripts\\sidebar.js",
+              "RelativeToolTip": "Scripts\\sidebar.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-29T04:37:58.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dash.js",
+              "DocumentMoniker": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Scripts\\dash.js",
+              "RelativeDocumentMoniker": "Scripts\\dash.js",
+              "ToolTip": "F:\\SDD-Project\\AIUB-Portal-Redesign\\Scripts\\dash.js",
+              "RelativeToolTip": "Scripts\\dash.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-29T04:36:44.623Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace AIUB_Portal_Redesign.Controllers
 {
     public class StudentController : Controller
     {
+        private bool IsStudent()
+        {
+            return Session["UserRole"]?.ToString() == "Student";
+        }
 
         public ActionResult Index()
         {
-            if (Session["UserRole"] != "Student")
+            if (!IsStudent())
             {
-                return RedirectToDashboard();
+                return RedirectToAction("Login", "Account");
             }
 
             return View();
@@ -21,16 +21,31 @@ namespace AIUB_Portal_Redesign.Controllers
 
         public ActionResult Applications()
         {
+            if (!IsStudent())
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             return View();
         }
 
         public ActionResult CourseDetails()
         {
+            if (!IsStudent())
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             return View();
         }
 
         public ActionResult DownloadForms()
         {
+            if (!IsStudent())
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             return View();
         }
     }

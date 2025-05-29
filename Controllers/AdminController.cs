@@ -21,7 +21,7 @@ namespace AIUB_Portal_Redesign.Controllers
 
         private bool IsAdmin()
         {
-            return Session["UserRole"] != null && Session["UserRole"].ToString() == "Admin";
+            return Session["UserRole"]?.ToString() == "Admin";
         }
 
         public ActionResult Index()
@@ -31,9 +31,9 @@ namespace AIUB_Portal_Redesign.Controllers
                 return RedirectToAction("Login", "Account");
             }
 
-            var profiles = _dbContext.StudentProfiles 
+            var profiles = _dbContext.StudentProfiles
                 .Include("User")
-                .Where(sp => sp.Status == ProfileStatus.Pending) 
+                .Where(sp => sp.Status == ProfileStatus.Pending)
                 .ToList();
 
             return View(profiles);
@@ -64,7 +64,7 @@ namespace AIUB_Portal_Redesign.Controllers
             if (!IsAdmin())
             {
                 return RedirectToAction("Login", "Account");
-            }  
+            }
 
             var profile = _dbContext.StudentProfiles.Find(id);
 

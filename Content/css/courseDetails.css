@@ -1,5 +1,4 @@
-﻿
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Main Content Styles - Matching Dashboard Layout */
+
 .main-content {
     margin-left: 300px;
     margin-top: 70px;
@@ -24,7 +23,7 @@ body {
         margin-left: 0;
     }
 
-/* Course Header Section */
+
 .course-header {
     background: white;
     border-radius: 16px;
@@ -101,7 +100,8 @@ body {
         text-decoration: underline;
     }
 
-/* Class Time Table */
+
+
 .schedule-container {
     background: white;
     border-radius: 16px;
@@ -185,7 +185,8 @@ body {
         border: 1px solid #e1bee7;
     }
 
-/* Tab Menu Section */
+
+
 .tab-container {
     background: white;
     border-radius: 16px;
@@ -250,7 +251,9 @@ body {
             background: #054593;
         }
 
-/* Result Section */
+
+
+
 .result-content {
     padding: 32px;
 }
@@ -292,7 +295,9 @@ body {
     border: 1px solid #a8e6cf;
 }
 
-/* Term Cards */
+
+
+
 .terms-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -407,6 +412,8 @@ body {
     text-align: center;
 }
 
+
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .main-content {
@@ -468,6 +475,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
     .course-header,
     .schedule-container,
     .tab-container {
@@ -487,4 +495,3 @@ body {
         font-size: 24px;
     }
 }
-

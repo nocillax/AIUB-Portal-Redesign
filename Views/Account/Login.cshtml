@@ -22,7 +22,7 @@
 
                 @using (Html.BeginForm("Login", "Account", FormMethod.Post))
 
-                 {
+                {
                     @Html.AntiForgeryToken()
 
                     if (ViewBag.Error != null)
@@ -44,10 +44,10 @@
                     </div>
 
                     <button type="submit" class="auth-button">Login to Portal</button>
-                 }
+                }
 
-                <div class="forgot-password">
-                    <a href="/Account/ForgotPassword">Forgot your password?</a>
+                <div class="redirect">
+                    <a href="@Url.Action("Register", "Account")">New User? Register Here</a>
                 </div>
 
                 <div class="divider">
@@ -56,7 +56,7 @@
 
                 <div style="text-align: center">
                     <a href=""
-                        style="color: #666; text-decoration: none; font-size: 14px">
+                       style="color: #666; text-decoration: none; font-size: 14px">
                         Contact IT Support
                     </a>
                 </div>

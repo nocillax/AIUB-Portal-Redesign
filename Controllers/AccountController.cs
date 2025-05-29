@@ -1,11 +1,9 @@
 ﻿using AIUB_Portal_Redesign.Context;
 using AIUB_Portal_Redesign.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web;
 using System.Web.Mvc;
 
 namespace AIUB_Portal_Redesign.Controllers
@@ -40,8 +38,8 @@ namespace AIUB_Portal_Redesign.Controllers
 
         private string HashPassword(string password)
         {
-            using(SHA256 sha256 = SHA256.Create())
-    {
+            using (SHA256 sha256 = SHA256.Create())
+            {
                 byte[] inputBytes = Encoding.UTF8.GetBytes(password);
                 byte[] hashBytes = sha256.ComputeHash(inputBytes);
                 return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
@@ -127,20 +125,20 @@ namespace AIUB_Portal_Redesign.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(string email,  string password)
+        public ActionResult Login(string email, string password)
         {
             if (Session["UserId"] != null)
             {
                 return RedirectToDashboard();
             }
-                
+
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
                 ViewBag.Error = "Email and Password are required.";
                 return View();
             }
 
-            string hashedPassword  = HashPassword(password);
+            string hashedPassword = HashPassword(password);
             var user = _dbContext.Users.FirstOrDefault(u => u.Email == email && u.Password == hashedPassword);
 
             if (user == null)
@@ -148,14 +146,14 @@ namespace AIUB_Portal_Redesign.Controllers
                 ViewBag.Error = "Invalid email or password.";
                 return View();
             }
-          
+
             if (user.Role == UserRole.Student)
             {
                 var profile = _dbContext.StudentProfiles.FirstOrDefault(p => p.UserId == user.Id);
                 if (profile == null)
                 {
                     ViewBag.Error = "Your profile is not available.";
-                    return View(); 
+                    return View();
                 }
                 else if (profile.Status != ProfileStatus.Approved)
                 {

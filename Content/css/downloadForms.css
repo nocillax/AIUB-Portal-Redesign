@@ -1,5 +1,4 @@
-﻿
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Main Content Styles */
+
 .main-content {
     margin-left: 300px;
     margin-top: 70px;
@@ -24,7 +23,8 @@ body {
         margin-left: 0;
     }
 
-/* Page Header */
+
+
 .page-header {
     margin-bottom: 32px;
 }
@@ -42,7 +42,8 @@ body {
     font-weight: 400;
 }
 
-/* Form Selection Section */
+
+
 .form-selection-section {
     background: white;
     border-radius: 16px;
@@ -151,7 +152,8 @@ body {
         transform: translateY(0);
     }
 
-/* Document Viewer Container */
+
+
 .document-viewer {
     background: white;
     border-radius: 16px;
@@ -171,7 +173,8 @@ body {
         background: linear-gradient(90deg, #054593, #bbe1f8);
     }
 
-/* Viewer Header */
+
+
 .viewer-header {
     padding: 20px 28px;
     border-bottom: 1px solid #f1f3f4;
@@ -261,7 +264,8 @@ body {
     border: 1px solid #e9ecef;
 }
 
-/* Document Display Area */
+
+
 .document-display {
     background: #e9ecef;
     min-height: 600px;
@@ -283,7 +287,8 @@ body {
     position: relative;
 }
 
-/* Document Navigation */
+
+
 .document-navigation {
     padding: 16px 28px;
     border-top: 1px solid #f1f3f4;
@@ -331,6 +336,8 @@ body {
     font-weight: 600;
     border: 1px solid #bbe1f8;
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -412,6 +419,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
     .form-selection-section,
     .document-placeholder {
         padding: 20px;

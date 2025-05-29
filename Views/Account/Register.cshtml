@@ -14,78 +14,82 @@
 <body>
     <div class="wrapper">
         <div class="auth-container">
-    <div class="auth-content">
-        <div class="auth-header">
-            <h2 class="auth-title">AMERICAN INTERNATIONAL UNIVERSITY-BANGLADESH</h2>
-            <p class="auth-subtitle">- WHERE LEADERS ARE CREATED -</p>
+            <div class="auth-content">
+                <div class="auth-header">
+                    <h2 class="auth-title">AMERICAN INTERNATIONAL UNIVERSITY-BANGLADESH</h2>
+                    <p class="auth-subtitle">- WHERE LEADERS ARE CREATED -</p>
+                </div>
+
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    if (ViewBag.Error != null)
+                    {
+                        <div class="general-error show">@ViewBag.Error</div>
+                    }
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.StudentId, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.StudentId, new { @class = "form-input", @placeholder = "Enter your Student ID" })
+                        @Html.ValidationMessageFor(m => m.StudentId, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.FullName, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.FullName, new { @class = "form-input", @placeholder = "Enter Your Full Name" })
+                        @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-input", @type = "email", @placeholder = "Enter Your University Email" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Department, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.Department, new { @class = "form-input", @placeholder = "Enter Your Department" })
+                        @Html.ValidationMessageFor(m => m.Department, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.DateOfBirth, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-input", @type = "date" })
+                        @Html.ValidationMessageFor(m => m.DateOfBirth, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Phone, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.Phone, new { @class = "form-input", @placeholder = "Enter Your Phone Number" })
+                        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Address, new { @class = "form-label" })
+                        @Html.TextBoxFor(m => m.Address, new { @class = "form-input", @placeholder = "Enter Your Address" })
+                        @Html.ValidationMessageFor(m => m.Address, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-input", @placeholder = "Enter Your Password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "error-message show" })
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" name="ConfirmPassword" class="form-input" placeholder="Re-type Your password" />
+                    </div>
+
+                    <button type="submit" class="auth-button">Register</button>
+
+                    <div class="redirect">
+                        <a href="@Url.Action("Login", "Account")">Already Registered? Sign In</a>
+                    </div>
+                }
+            </div>
         </div>
-
-        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
-        {
-            @Html.AntiForgeryToken()
-
-            if (ViewBag.Error != null)
-            {
-                <div class="general-error show">@ViewBag.Error</div>
-            }
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.StudentId, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.StudentId, new { @class = "form-input", @placeholder = "Enter your Student ID" })
-                @Html.ValidationMessageFor(m => m.StudentId, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.FullName, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.FullName, new { @class = "form-input", @placeholder = "Enter Your Full Name" })
-                @Html.ValidationMessageFor(m => m.FullName, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Email, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-input", @type = "email", @placeholder = "Enter Your University Email" })
-                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Department, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.Department, new { @class = "form-input", @placeholder = "Enter Your Department" })
-                @Html.ValidationMessageFor(m => m.Department, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.DateOfBirth, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-input", @type = "date" })
-                @Html.ValidationMessageFor(m => m.DateOfBirth, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Phone, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.Phone, new { @class = "form-input", @placeholder = "Enter Your Phone Number" })
-                @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Address, new { @class = "form-label" })
-                @Html.TextBoxFor(m => m.Address, new { @class = "form-input", @placeholder = "Enter Your Address" })
-                @Html.ValidationMessageFor(m => m.Address, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(m => m.Password, new { @class = "form-label" })
-                @Html.PasswordFor(m => m.Password, new { @class = "form-input", @placeholder = "Enter Your Password" })
-                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "error-message show" })
-            </div>
-
-            <div class="form-group">
-                <label for="ConfirmPassword" class="form-label">Confirm Password</label>
-                <input type="password" name="ConfirmPassword" class="form-input" placeholder="Re-type Your password" />
-            </div>
-
-            <button type="submit" class="auth-button">Register</button>
-        }
-    </div>
-</div>
     </div>
 </body>
 </html>

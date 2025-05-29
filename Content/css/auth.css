@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -46,11 +47,10 @@ body {
 }
 
 
-
 .auth-container {
     background: rgba(187, 225, 248, 0.3);
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     padding: 40px;
     width: 100%;
     max-width: 420px;
@@ -89,6 +89,8 @@ body {
     letter-spacing: 0.3px;
 }
 
+
+
 .form-group {
     margin-bottom: 22px;
 }
@@ -121,6 +123,8 @@ body {
         border-color: #dc3545;
     }
 
+
+
 .error-message {
     color: #dc3545;
     font-size: 13px;
@@ -131,6 +135,9 @@ body {
     .error-message.show {
         display: block;
     }
+
+
+
 
 .auth-button {
     width: 100%;
@@ -156,6 +163,9 @@ body {
         transform: translateY(0);
     }
 
+
+
+
 .general-error {
     background-color: #f8d7da;
     color: #721c24;
@@ -170,20 +180,26 @@ body {
         display: block;
     }
 
-.forgot-password {
+
+
+
+.redirect {
     text-align: center;
     margin-top: 24px;
 }
 
-    .forgot-password a {
+    .redirect a {
         color: #054593;
         text-decoration: none;
         font-size: 14px;
     }
 
-        .forgot-password a:hover {
+        .redirect a:hover {
             text-decoration: underline;
         }
+
+
+
 
 .divider {
     margin: 24px 0;
