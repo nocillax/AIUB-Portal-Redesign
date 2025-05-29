@@ -148,6 +148,10 @@
     <Compile Include="Migrations\202505290125015_check.Designer.cs">
       <DependentUpon>202505290125015_check.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505290525247_gitCloe.cs" />
+    <Compile Include="Migrations\202505290525247_gitCloe.Designer.cs">
+      <DependentUpon>202505290525247_gitCloe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\StudentProfile.cs" />
     <Compile Include="Models\User.cs" />
@@ -206,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202505290125015_check.resx">
       <DependentUpon>202505290125015_check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505290525247_gitCloe.resx">
+      <DependentUpon>202505290525247_gitCloe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
