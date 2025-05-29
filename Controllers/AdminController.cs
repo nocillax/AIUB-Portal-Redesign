@@ -32,6 +32,7 @@ namespace AIUB_Portal_Redesign.Controllers
             }
 
             var profiles = _dbContext.StudentProfiles 
+                .Include("User")
                 .Where(sp => sp.Status == ProfileStatus.Pending) 
                 .ToList();
 

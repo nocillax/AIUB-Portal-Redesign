@@ -1,0 +1,490 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* Main Content Styles - Matching Dashboard Layout */
+.main-content {
+    margin-left: 300px;
+    margin-top: 70px;
+    padding: 32px;
+    transition: margin-left 0.3s ease;
+    min-height: calc(100vh - 70px);
+}
+
+    .main-content.expanded {
+        margin-left: 0;
+    }
+
+/* Course Header Section */
+.course-header {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f3f4;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .course-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #054593, #bbe1f8);
+    }
+
+.course-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.faculty-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.faculty-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #054593, #bbe1f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    box-shadow: 0 4px 16px rgba(5, 69, 147, 0.2);
+    flex-shrink: 0;
+}
+
+.faculty-details {
+    flex: 1;
+    min-width: 200px;
+}
+
+.faculty-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.faculty-email {
+    font-size: 16px;
+    color: #054593;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+    .faculty-email:hover {
+        color: #043a7a;
+        text-decoration: underline;
+    }
+
+/* Class Time Table */
+.schedule-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f3f4;
+    margin-bottom: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .schedule-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #054593, #bbe1f8);
+    }
+
+.schedule-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid #f1f3f4;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+.schedule-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .schedule-table th {
+        padding: 20px 24px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 700;
+        color: #054593;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: linear-gradient(135deg, #f8f9fa, #ffffff);
+        border-bottom: 2px solid #f1f3f4;
+    }
+
+    .schedule-table td {
+        padding: 18px 24px;
+        font-size: 15px;
+        color: #495057;
+        font-weight: 500;
+        border-bottom: 1px solid #f8f9fa;
+    }
+
+    .schedule-table tr:hover {
+        background: #f8f9fa;
+    }
+
+.class-type {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+    .class-type.theory {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        color: #1565c0;
+        border: 1px solid #bbdefb;
+    }
+
+    .class-type.lab {
+        background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+        color: #7b1fa2;
+        border: 1px solid #e1bee7;
+    }
+
+/* Tab Menu Section */
+.tab-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f3f4;
+    margin-bottom: 32px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .tab-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #054593, #bbe1f8);
+    }
+
+.tab-menu {
+    display: flex;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.tab-item {
+    flex: 1;
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-right: 1px solid #f1f3f4;
+    position: relative;
+}
+
+    .tab-item:last-child {
+        border-right: none;
+    }
+
+    .tab-item:hover {
+        background: rgba(187, 225, 248, 0.1);
+        color: #054593;
+    }
+
+    .tab-item.active {
+        background: linear-gradient(135deg, #bbe1f8, #e3f2fd);
+        color: #054593;
+        font-weight: 700;
+    }
+
+        .tab-item.active::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #054593;
+        }
+
+/* Result Section */
+.result-content {
+    padding: 32px;
+}
+
+.result-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.result-summary {
+    font-size: 18px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.total-grade {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.grade-info {
+    color: #6c757d;
+}
+
+.final-grade {
+    background: linear-gradient(135deg, #d4edda, #a8e6cf);
+    color: #155724;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #a8e6cf;
+}
+
+/* Term Cards */
+.terms-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 24px;
+}
+
+.term-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f3f4;
+    overflow: hidden;
+    position: relative;
+}
+
+    .term-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+    }
+
+    .term-card.midterm::before {
+        background: linear-gradient(90deg, #efe80f, #f4e84d);
+    }
+
+    .term-card.finalterm::before {
+        background: linear-gradient(90deg, #913c69, #b8447a);
+    }
+
+.term-header {
+    padding: 24px 28px;
+    border-bottom: 1px solid #f1f3f4;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+.term-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.term-details {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.term-grade {
+    display: inline-block;
+    background: linear-gradient(135deg, #d4edda, #a8e6cf);
+    color: #155724;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-left: 8px;
+    border: 1px solid #a8e6cf;
+}
+
+.term-content {
+    padding: 24px 28px;
+}
+
+.assessment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-radius: 12px;
+    border: 1px solid #f1f3f4;
+    transition: all 0.2s ease;
+}
+
+    .assessment-item:hover {
+        background: #f8f9fa;
+    }
+
+    .assessment-item:last-child {
+        margin-bottom: 0;
+    }
+
+.assessment-info {
+    flex: 1;
+}
+
+.assessment-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 4px;
+}
+
+.assessment-details {
+    font-size: 13px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.assessment-score {
+    font-size: 16px;
+    font-weight: 700;
+    color: #054593;
+    padding: 8px 12px;
+    background: rgba(187, 225, 248, 0.2);
+    border-radius: 8px;
+    min-width: 60px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-content {
+        margin-left: 0;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 16px;
+    }
+
+    .course-title {
+        font-size: 28px;
+    }
+
+    .faculty-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faculty-avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .tab-menu {
+        flex-wrap: wrap;
+    }
+
+    .tab-item {
+        flex: 1 1 50%;
+        min-width: 120px;
+    }
+
+    .terms-container {
+        grid-template-columns: 1fr;
+    }
+
+    .result-overview {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .assessment-item {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-header,
+    .schedule-container,
+    .tab-container {
+        padding: 20px;
+    }
+
+    .result-content {
+        padding: 20px;
+    }
+
+    .term-header,
+    .term-content {
+        padding: 20px;
+    }
+
+    .course-title {
+        font-size: 24px;
+    }
+}
+

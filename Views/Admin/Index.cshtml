@@ -1,53 +1,109 @@
 ﻿@model List<AIUB_Portal_Redesign.Models.StudentProfile>
+
 @{
-    ViewBag.Title = "Admin Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Pending Student Registrations</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - AIUB Portal</title>
+    <link href="~/Content/css/adminDash.css" rel="stylesheet" />
 
-@if (!Model.Any())
-{
-    <p>No pending registrations.</p>
-}
-else
-{
-    <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Full Name</th>
-                <th>Student ID</th>
-                <th>Program</th>
-                <th>Date of Birth</th>
-                <th>Phone</th>
-                <th>Address</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var student in Model)
-            {
-                <tr>
-                    <td>@student.FullName</td>
-                    <td>@student.StudentId</td>
-                    <td>@student.Program</td>
-                    <td>@student.DateOfBirth.ToShortDateString()</td>
-                    <td>@student.Phone</td>
-                    <td>@student.Address</td>
-                    <td>
-                        @using (Html.BeginForm("Approve", "Admin", FormMethod.Post))
-                        {
-                            @Html.Hidden("id", student.UserId)
-                            <button type="submit">Approve</button>
-                        }
+</head>
+<body>
 
-                        @using (Html.BeginForm("Reject", "Admin", FormMethod.Post))
-                        {
-                            @Html.Hidden("id", student.UserId)
-                            <button type="submit">Reject</button>
-                        }
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+    <main class="main-content" id="mainContent">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">Admin Dashboard</h1>
+            <p class="page-subtitle">Manage student registrations and approvals</p>
+        </div>
+
+        <!-- Registration Table Card -->
+        <div class="registration-card">
+            <div class="card-header">
+                <h2 class="card-title">Pending Student Registrations</h2>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search by name, ID or department..." />
+                    <select class="filter-select">
+                        <option value="">All Departments</option>
+                        <option value="cse">Computer Science & Engineering</option>
+                        <option value="eee">Electrical & Electronic Engineering</option>
+                        <option value="bba">Business Administration</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-container">
+                @if (!Model.Any())
+                {
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📋</div>
+                        <h3 class="empty-state-title">No Pending Registrations</h3>
+                        <p class="empty-state-text">All student registrations have been processed.</p>
+                    </div>
+                }
+                else
+                {
+                    <table class="registration-table">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Student ID</th>
+                                <th>Department</th>
+                                <th>Date of Birth</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var student in Model)
+                            {
+                                <tr>
+                                    <td class="student-name">@student.User.FullName</td>
+                                    <td><span class="student-id">@student.StudentId</span></td>
+                                    <td class="department">@student.Department</td>
+                                    <td>@student.DateOfBirth.ToString("dd MMM yyyy")</td>
+                                    <td>@student.Phone</td>
+                                    <td>@student.Address</td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            @using (Html.BeginForm("Approve", "Admin", FormMethod.Post))
+                                            {
+                                                @Html.Hidden("id", student.UserId)
+                                                <button type="submit" class="approve-btn">Approve</button>
+                                            }
+                                            @using (Html.BeginForm("Reject", "Admin", FormMethod.Post))
+                                            {
+                                                @Html.Hidden("id", student.UserId)
+                                                <button type="submit" class="reject-btn">Reject</button>
+                                            }
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+
+            <div class="card-footer">
+                <span>Showing @Model.Count() pending registrations</span>
+                <div class="pagination">
+                    <button class="page-btn">←</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">→</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

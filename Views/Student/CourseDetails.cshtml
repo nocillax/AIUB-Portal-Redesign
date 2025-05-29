@@ -1,0 +1,149 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course & Result - AIUB Portal</title>
+    <link href="~/Content/css/courseDetails.css" rel="stylesheet" />
+    <link href="~/Content/css/dash.css" rel="stylesheet" />
+</head>
+<body>
+
+    <main class="main-content" id="mainContent">
+        <!-- Course Header Section -->
+        <div class="course-header">
+            <h1 class="course-title">Object Oriented Programming 2</h1>
+            <div class="faculty-info">
+                <div class="faculty-avatar">IM</div>
+                <div class="faculty-details">
+                    <h2 class="faculty-name">DR. MD IFTEKHARUL MOBIN</h2>
+                    <a href="mailto:rahman.ahmed@aiub.edu" class="faculty-email">iftekhar@aiub.edu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Class Time Table -->
+        <div class="schedule-container">
+            <div class="schedule-header">
+                <h2 class="schedule-title">Class Schedule</h2>
+            </div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Class Type</th>
+                        <th>Room</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sunday, 9:00 AM - 10:30 AM</td>
+                        <td><span class="class-type theory">Theory</span></td>
+                        <td>Room 2110</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday, 11:00 AM - 2:00 PM</td>
+                        <td><span class="class-type lab">Lab</span></td>
+                        <td>Room DN0205</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tab Menu Section -->
+        <div class="tab-container">
+            <div class="tab-menu">
+                <div class="tab-item active">Result</div>
+                <div class="tab-item">TSF</div>
+                <div class="tab-item">Notes</div>
+                <div class="tab-item">Notice</div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="result-content">
+                <div class="result-overview">
+                    <div class="result-summary">Course Result Overview</div>
+                    <div class="total-grade">
+                        <span class="grade-info">Total Mark: 100 | Pass: 50</span>
+                        <span class="final-grade">A+ (92)</span>
+                    </div>
+                </div>
+
+                <div class="terms-container">
+                    <!-- MidTerm Card -->
+                    <div class="term-card midterm">
+                        <div class="term-header">
+                            <h3 class="term-title">
+                                MidTerm, Spring 2024-2025
+                                <span class="term-grade">A+ (90)</span>
+                            </h3>
+                            <p class="term-details">Total: 100 | Pass: 50 | Contributes: 40%</p>
+                        </div>
+                        <div class="term-content">
+                            <div class="assessment-item">
+                                <div class="assessment-info">
+                                    <div class="assessment-name">Attendance</div>
+                                    <div class="assessment-details">Total: 10 | Pass: 5 | Contributes: 10%</div>
+                                </div>
+                                <div class="assessment-score">10.00</div>
+                            </div>
+                            <div class="assessment-item">
+                                <div class="assessment-info">
+                                    <div class="assessment-name">Lab Performance</div>
+                                    <div class="assessment-details">Total: 40 | Pass: 20 | Contributes: 40%</div>
+                                </div>
+                                <div class="assessment-score">35.00</div>
+                            </div>
+                            <div class="assessment-item">
+                                <div class="assessment-info">
+                                    <div class="assessment-name">Theory Quizzes</div>
+                                    <div class="assessment-details">Total: 50 | Pass: 25 | Contributes: 50%</div>
+                                </div>
+                                <div class="assessment-score">45.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FinalTerm Card -->
+                    <div class="term-card finalterm">
+                        <div class="term-header">
+                            <h3 class="term-title">
+                                FinalTerm, Spring 2024-2025
+                                <span class="term-grade">A+ (92)</span>
+                            </h3>
+                            <p class="term-details">Total: 100 | Pass: 50 | Contributes: 60%</p>
+                        </div>
+                        <div class="term-content">
+                            <div class="assessment-item">
+                                <div class="assessment-info">
+                                    <div class="assessment-name">Attendance</div>
+                                    <div class="assessment-details">Total: 10 | Pass: 5 | Contributes: 10%</div>
+                                </div>
+                                <div class="assessment-score">10.00</div>
+                            </div>
+                            <div class="assessment-item">
+                                <div class="assessment-info">
+                                    <div class="assessment-name">Lab Performance</div>
+                                    <div class="assessment-details">Total: 30 | Pass: 15 | Contributes: 30%</div>
+                                </div>
+                                <div class="assessment-score">28.00</div>
+                            </div>
+                            <div class="assessment-item">
+                                <div class="assessment-info">
+                                    <div class="assessment-name">Final Examination</div>
+                                    <div class="assessment-details">Total: 60 | Pass: 30 | Contributes: 60%</div>
+                                </div>
+                                <div class="assessment-score">54.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

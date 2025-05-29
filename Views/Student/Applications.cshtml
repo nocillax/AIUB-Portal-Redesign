@@ -1,0 +1,110 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applications - AIUB Portal</title>
+    <link href="~/Content/css/applications.css" rel="stylesheet" />
+    <link href="~/Content/css/dash.css" rel="stylesheet" />
+</head>
+<body>
+
+    <main class="main-content" id="mainContent">
+        <div class="page-header">
+            <h1 class="page-title">Applications</h1>
+            <p class="page-subtitle">
+                Submit new applications and track your existing application status
+            </p>
+        </div>
+
+        <div class="application-selector">
+            <div class="selector-content">
+                <label class="selector-label" for="applicationSelect">
+                    Select Application:
+                </label>
+                <select class="application-dropdown" id="applicationSelect">
+                    <option value="">Choose an application type...</option>
+                    <option value="convocation">Convocation Application</option>
+                    <option value="convocation-attendance">Convocation Attendance</option>
+                    <option value="department-change">Department Change</option>
+                    <option value="program-change">Program Change</option>
+                    <option value="curriculum-change">Curriculum Change</option>
+                    <option value="major-change">Major Change</option>
+                    <option value="general-info-change">General Information Change</option>
+                </select>
+                <button class="apply-button">Apply</button>
+            </div>
+        </div>
+
+        <div class="applications-table-container">
+            <div class="table-header">
+                <h2 class="table-title">Application History</h2>
+                <p class="table-subtitle">
+                    Track the status of your submitted applications
+                </p>
+            </div>
+
+            <table class="applications-table">
+                <thead class="table-head">
+                    <tr>
+                        <th>Reference No.</th>
+                        <th>Application Type</th>
+                        <th>Apply Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td><span class="reference-number">APP-2024-001</span></td>
+                        <td><span class="application-type">Convocation Application</span></td>
+                        <td><span class="apply-date">March 15, 2024</span></td>
+                        <td><span class="status-badge status-approved">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="reference-number">APP-2024-002</span></td>
+                        <td><span class="application-type">Department Change</span></td>
+                        <td><span class="apply-date">March 10, 2024</span></td>
+                        <td><span class="status-badge status-processing">Processing</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="reference-number">APP-2024-003</span></td>
+                        <td><span class="application-type">General Information Change</span></td>
+                        <td><span class="apply-date">March 8, 2024</span></td>
+                        <td><span class="status-badge status-pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="reference-number">APP-2024-004</span></td>
+                        <td><span class="application-type">Program Change</span></td>
+                        <td><span class="apply-date">February 28, 2024</span></td>
+                        <td><span class="status-badge status-rejected">Rejected</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="reference-number">APP-2024-005</span></td>
+                        <td><span class="application-type">Curriculum Change</span></td>
+                        <td><span class="apply-date">February 20, 2024</span></td>
+                        <td><span class="status-badge status-approved">Approved</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="reference-number">APP-2024-006</span></td>
+                        <td><span class="application-type">Major Change</span></td>
+                        <td><span class="apply-date">February 15, 2024</span></td>
+                        <td><span class="status-badge status-processing">Processing</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="reference-number">APP-2024-007</span></td>
+                        <td><span class="application-type">Convocation Attendance</span></td>
+                        <td><span class="apply-date">January 30, 2024</span></td>
+                        <td><span class="status-badge status-approved">Approved</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+</body>
+</html>

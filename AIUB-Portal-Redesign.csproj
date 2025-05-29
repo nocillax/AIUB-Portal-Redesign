@@ -145,19 +145,29 @@
     <Compile Include="Migrations\202505281734224_RenameProg2Dep.Designer.cs">
       <DependentUpon>202505281734224_RenameProg2Dep.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202505290125015_check.cs" />
+    <Compile Include="Migrations\202505290125015_check.Designer.cs">
+      <DependentUpon>202505290125015_check.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\StudentProfile.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\adminDash.css" />
+    <Content Include="Content\css\applications.css" />
     <Content Include="Content\css\auth.css" />
+    <Content Include="Content\css\courseDetails.css" />
     <Content Include="Content\css\dash.css" />
+    <Content Include="Content\css\downloadForms.css" />
     <Content Include="Content\images\aiub-seeklogo.svg" />
+    <Content Include="Content\images\Assignment-Cover-Page-2025.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\dash.js" />
+    <Content Include="Scripts\sidebar.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -183,6 +193,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\Student\Applications.cshtml" />
+    <Content Include="Views\Student\CourseDetails.cshtml" />
+    <Content Include="Views\Student\DownloadForms.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202505281545205_final.resx">
@@ -190,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202505281734224_RenameProg2Dep.resx">
       <DependentUpon>202505281734224_RenameProg2Dep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202505290125015_check.resx">
+      <DependentUpon>202505290125015_check.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

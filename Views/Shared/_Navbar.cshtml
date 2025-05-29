@@ -3,7 +3,7 @@
     var userName = Session["UserName"]?.ToString();
 }
 
-@* Shared Navbar *@
+
 <nav class="navbar">
     <div class="navbar-left">
         
@@ -17,11 +17,11 @@
         @if (userRole == "Student")
         {
             <div class="navbar-nav">
-                <a href="#" class="nav-item">
+                <a href="@Url.Action("Index", "Student")" class="nav-item">
                     <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                        <path d="M3 9.5l9-7 9 7V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
                     </svg>
-                    Course & Results
+                    Home
                 </a>
                 <a href="#" class="nav-item">
                     <svg viewBox="0 0 24 24" fill="currentColor">
@@ -34,6 +34,17 @@
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>
                     Notice
+                </a>
+            </div>
+        }
+        else
+        { 
+           <div class="navbar-nav">
+                <a href="@Url.Action("Index", "Admin")" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 9.5l9-7 9 7V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+                    </svg>
+                Home
                 </a>
             </div>
         }

@@ -1,0 +1,160 @@
+﻿@{
+    var userRole = Session["UserRole"]?.ToString();
+}
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">
+    <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+</button>
+
+<aside class="sidebar" id="sidebar">
+    @if (userRole == "Admin")
+    {
+        <div class="sidebar-section">
+            <div class="sidebar-title">📘 Users</div>
+            <a class="sidebar-item active" href="@Url.Action("Index", "Admin")">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="m7.97 12.53c-.293-.292-.293-.768 0-1.06.292-.293.768-.293 1.06 0l1.803 1.803 4.137-4.137c.292-.292.768-.292 1.06 0 .293.293.293.768 0 1.061l-4.666 4.667c-.293.293-.768.293-1.061 0z" />
+                    <path d="m10.732 1.775c.336-.336.792-.525 1.268-.525s.932.189 1.268.525l1.445 1.445c.066.066.16.097.253.082l2.018-.319c.47-.075.95.041 1.335.32.384.28.642.701.717 1.17l.319 2.018c.015.093.073.173.157.216l1.82.927c.424.216.745.592.892 1.044s.108.945-.108 1.368l-.927 1.821c-.043.084-.043.182 0 .266l.927 1.821c.216.423.255.916.108 1.368s-.468.828-.892 1.044l-1.82.927c-.084.043-.142.123-.157.216l-.319 2.018c-.075.469-.333.89-.717 1.17-.385.279-.865.395-1.335.32l-2.018-.319c-.093-.015-.187.016-.253.082l-1.445 1.445c-.336.336-.792.525-1.268.525s-.932-.189-1.268-.525l-1.445-1.445c-.066-.066-.16-.097-.253-.082l-2.018.319c-.47.075-.95-.041-1.335-.32-.384-.28-.642-.701-.717-1.17l-.319-2.018c-.015-.093-.073-.173-.157-.216l-1.82-.927c-.424-.216-.745-.592-.892-1.044s-.108-.945.108-1.368l.927-1.821c.043-.084.043-.182 0-.266l-.927-1.821c-.216-.423-.255-.916-.108-1.368s.468-.828.892-1.044l1.82-.927c.084-.043.142-.123.157-.216l.319-2.018c.075-.469.333-.89.717-1.17.385-.279.865-.395 1.335-.32l2.018.319c.093.015.187-.016.253-.082zm1.061 1.061-1.445 1.445c-.406.406-.982.593-1.549.503l-2.018-.32c-.077-.012-.155.007-.218.053-.063.045-.105.114-.117.191l-.32 2.018c-.09.567-.445 1.057-.957 1.317l-1.821.928c-.069.035-.121.097-.145.171s-.018.154.017.223l.928 1.821c.261.511.261 1.117 0 1.628l-.928 1.821c-.035.069-.041.149-.017.223s.076.136.145.171l1.821.928c.512.26.867.75.957 1.317l.32 2.018c.012.077.054.146.117.191.063.046.141.065.218.053l2.018-.32c.567-.09 1.143.097 1.549.503l1.445 1.445c.055.055.129.086.207.086s.152-.031.207-.086l1.445-1.445c.406-.406.982-.593 1.549-.503l2.018.32c.077.012.155-.007.218-.053.063-.045.105-.114.117-.191l.32-2.018c.09-.567.445-1.057.957-1.317l1.821-.928c.069-.035.121-.097.145-.171s.018-.154-.017-.223l-.928-1.821c-.261-.511-.261-1.117 0-1.628l.928-1.821c.035-.069.041-.149.017-.223s-.076-.136-.145-.171l-1.821-.928c-.512-.26-.867-.75-.957-1.317l-.32-2.018c-.012-.077-.054-.146-.117-.191-.063-.046-.141-.065-.218-.053l-2.018.32c-.567.09-1.143-.097-1.549-.503l-1.445-1.445c-.055-.055-.129-.086-.207-.086s-.152.031-.207.086z" />
+                </svg>
+                Approve Students
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="sidebar-section">
+            <div >
+                <a class="sidebar-title sidebar-item active" href="@Url.Action("Index", "Student")">
+                    <svg fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 9.5l9-7 9 7V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z" />
+                    </svg>
+                    Home
+                </a>
+            </div>
+    
+        </div>
+
+    <div class="sidebar-section">
+        <div class="sidebar-title">📘 Academic</div>
+        <a class="sidebar-item" href=@Url.Action("CourseDetails", "Student")>
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path>
+            </svg>
+            Course &amp; Results
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H18V1h-2v1H8V1H6v1H4.5C3.67 2 3 2.67 3 3.5v15C3 19.33 3.67 20 4.5 20h15c.83 0 1.5-.67 1.5-1.5v-15C21 2.67 20.33 2 19.5 2z"></path>
+            </svg>
+            Course Registration
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+            </svg>
+            Drop Application
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            Offered Courses
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h8c1.1 0 2-.9 2-2V8l-6-6z"></path>
+            </svg>
+            My Curriculum
+        </a>
+    </div>
+
+    <div class="sidebar-section">
+        <div class="sidebar-title">📊 Grades</div>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path>
+            </svg>
+            Grade Reports by Curriculum
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path>
+            </svg>
+            Grade Reports by Semester
+        </a>
+    </div>
+
+    <div class="sidebar-section">
+        <div class="sidebar-title">💸 Financials</div>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"></path>
+            </svg>
+            Financial Info
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91 2.28.6 4.18 1.58 4.18 3.91 0 1.82-1.33 2.96-3.12 3.16z"></path>
+            </svg>
+            Current Semester Fees
+        </a>
+    </div>
+
+    <div class="sidebar-section">
+        <div class="sidebar-title">📚 Library</div>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+            Search Book
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path>
+            </svg>
+            Current Borrows
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path>
+            </svg>
+            Borrow History
+        </a>
+    </div>
+
+    <div class="sidebar-section">
+        <div class="sidebar-title">📝 Applications</div>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"></path>
+            </svg>
+            Parking Application
+        </a>
+        <a class="sidebar-item" href="#">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 21c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14l4 4v14zM15 7H4v14h16V9h-5V7z"></path>
+            </svg>
+            Swimming Application
+        </a>
+        <a class="sidebar-item" href="@Url.Action("Applications", "Student")">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h8c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path>
+            </svg>
+            Other Applications
+        </a>
+    </div>
+
+    <div class="sidebar-section">
+        <div class="sidebar-title">📄 Download Forms</div>
+        <a class="sidebar-item" href="@Url.Action("DownloadForms", "Student")">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+            </svg>
+            Download Forms
+        </a>
+    </div>
+    }
+
+</aside>

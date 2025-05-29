@@ -260,6 +260,7 @@
         text-transform: uppercase;
         letter-spacing: 0.8px;
         margin-bottom: 8px;
+        text-decoration: none;
       }
 
       .sidebar-item {

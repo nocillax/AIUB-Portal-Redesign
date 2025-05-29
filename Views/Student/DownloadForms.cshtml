@@ -1,0 +1,97 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Forms - AIUB Portal</title>
+    <link href="~/Content/css/downloadForms.css" rel="stylesheet" />
+    <link href="~/Content/css/dash.css" rel="stylesheet" />
+</head>
+<body>
+
+    <main class="main-content" id="mainContent">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">Download Forms</h1>
+            <p class="page-subtitle">
+                Access and download official university forms and documents
+            </p>
+        </div>
+
+        <!-- Form Selection Section -->
+        <div class="form-selection-section">
+            <div class="selection-controls">
+                <div class="control-group">
+                    <label class="control-label" for="formSelect">Select Form</label>
+                    <select class="form-select" id="formSelect">
+                        <option value="assignment-cover">AIUB Assignment Cover Form</option>
+                        <option value="transfer-waive">Application for Transfer Waive Courses Form</option>
+                        <option value="course-adjustment">Course Adjustment Form</option>
+                        <option value="thesis-group">Thesis Group List Form</option>
+                        <option value="transfer-credit">Transfer Credit Request Form</option>
+                        <option value="set-b-exam">Set B Exam Form</option>
+                        <option value="course-evaluation">Course Evaluation Form</option>
+                        <option value="advisory-probation">Advisory Form For Probation Student</option>
+                        <option value="policy-statement">Student Policy Statement</option>
+                        <option value="research-grant">Application for Research Grant</option>
+                    </select>
+                </div>
+
+                <div class="control-group format-group">
+                    <label class="control-label" for="formatSelect">Format</label>
+                    <select class="format-select" id="formatSelect">
+                        <option value="pdf">.pdf</option>
+                        <option value="doc">.doc</option>
+                    </select>
+                </div>
+                <button class="download-btn">Download</button>
+            </div>
+        </div>
+
+        <!-- Document Viewer -->
+        <div class="document-viewer">
+            <!-- Viewer Header -->
+            <div class="viewer-header">
+                <div class="viewer-title">
+                    <div class="file-icon">📄</div>
+                    <span>Document Viewer</span>
+                </div>
+                <div class="viewer-controls">
+                    <div class="zoom-controls">
+                        <button class="zoom-btn">−</button>
+                        <span class="zoom-level">100%</span>
+                        <button class="zoom-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Document Display Area -->
+            <div class="document-display">
+                <div class="document-frame">
+                    <img src="@Url.Content("~/Content/images/Assignment-Cover-Page-2025.svg")"/>
+                </div>
+            </div>
+
+
+            <!-- Document Navigation -->
+            <div class="document-navigation">
+                <button class="nav-btn disabled">
+                    <span>←</span>
+                    <span>Previous</span>
+                </button>
+                <div class="page-counter">Page - of -</div>
+                <button class="nav-btn disabled">
+                    <span>Next</span>
+                    <span>→</span>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

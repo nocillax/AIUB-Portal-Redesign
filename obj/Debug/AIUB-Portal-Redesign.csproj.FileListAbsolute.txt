@@ -84,3 +84,4 @@ F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Portal-Redesign.pdb
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB_Portal_Redesign.Migrations.final.resources
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB-Portal-Redesign.csproj.GenerateResource.cache
 F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB_Portal_Redesign.Migrations.RenameProg2Dep.resources
+F:\SDD-Project\AIUB-Portal-Redesign\obj\Debug\AIUB_Portal_Redesign.Migrations.check.resources
